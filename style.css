@@ -1,0 +1,955 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	text-decoration: none;
+	list-style: none;
+}
+
+img {
+	max-width: 100%; /*чтобы изображение не превышало размера контейнера в котором оно находится*/
+	height: 0 auto;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #FEFEFB;
+}
+
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/* Header styles start */
+.header {
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #FEFEFB;
+}
+
+.intro {
+	min-height: 100vh;
+	background: url(images/intro-pic.jpg) no-repeat right;
+	background-position: top 0 right 0;
+}
+
+.header-wrapper {
+	display: flex;
+	flex-wrap: wrap; /*для корректного переноса контента*/
+	justify-content: space-between; /*выравнивание контента по краям (лого - слева, меню - справа)*/
+}
+
+.header-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header-logo {
+	padding-top: 44px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.header-logo a {
+	color: #FDB100;
+}
+
+.header-nav {
+	margin-left: 160px;
+	margin-top: 48px;
+}
+
+.header-link {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #9196A1;
+}
+
+.header-item {
+	padding-right: 100px;
+}
+
+.header-link:hover {
+	font-weight: 600;
+	color: #3A3C41;
+	transition: .2s all;
+}
+
+.header-login {
+	display: flex;
+	margin-left: auto;
+}
+
+.header-login_logo {
+	padding-top: 40px;
+}
+
+.header-login_button {
+	padding-top: 48px;
+	padding-left: 14px;
+
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FDB100;
+}
+
+.header-login_button:hover {
+	color: #FD8800;
+	transition: .2s all;
+}
+
+.intro-wrapper {
+	margin-top: 140px;
+}
+
+.intro-title {
+	padding-bottom: 16px;
+
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 88px;
+	color: #25292D;
+}
+
+.intro-text {
+	padding-bottom: 42px;
+
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #4A525A;
+}
+
+.intro-buttons {
+	display: flex;
+}
+
+.button-add {
+	width: 278px;
+	height: 60px;
+	left: 120px;
+	top: 501px;
+	background: #FDB100;
+	border-radius: 16px ;
+	border: 1px solid #FDB100;
+
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+	color: #FFFFFF;
+
+	cursor: pointer;
+}
+
+.button-add:hover {
+	background: #FD8800;
+	border: 1px solid #FD8800;
+	transition: .2s all;
+}
+
+.button-add_img {
+	padding-right: 23px;
+}
+
+.button-enter {
+	width: 216px;
+	height: 60px;
+	left: 422px;
+	top: 501px;
+	border: 1px solid #FDB100;
+	box-sizing: border-box;
+	border-radius: 16px;
+	background: #FEFEFB;
+	text-align: center;
+	padding-top: 15px;
+
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+	color: #FDB100;
+
+	margin-left: 24px;
+	cursor: pointer;
+}
+
+.button-enter:hover {
+	color: #FD8800;
+	transition: .2s all;
+}
+/* Header styles end */
+
+
+/*Main styles start*/
+/*Section tegs start*/
+.main-tegs {
+	margin-top: 113px;
+	margin-bottom: 157px;
+	background: #FEFEFB;
+}
+
+.block-text_title {
+	padding-bottom: 16px;
+
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 62px;
+	color: #25292D;
+}
+
+.block-text_text {
+	padding-bottom: 42px;
+
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	color: #4A525A;
+}
+
+.block_dishs {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 29px; /*расстояние между колонками*/ 
+}
+
+.block_dish {
+	width: 278px;
+	height: 271px;
+
+	background: #FFFFFF;
+	border-radius: 24px;
+}
+
+.block_dish:hover {
+	box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+	transition: .2s all;
+}
+
+.dish-card_pic {
+	margin-top: 37px;
+	margin-left: 25px;
+	margin-bottom: 30px;
+
+	background: #FFEFCC;
+	border-radius: 12px;
+	padding: 13px 14px 13px 14px;
+}
+
+.dish-card_title {
+	padding-left: 24px;
+	padding-bottom: 16px;
+
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	color: #25292D;
+}
+
+.dish-card_text {
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-bottom: 32px;
+
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #4A525A;
+}
+/*Section tegs end*/
+
+/*Section dish day start*/
+.main-dish_day {
+	display: flex;
+	margin-bottom: 150px;
+}
+
+.dish_day-picture {
+	width: 543px;
+	height: 543px;
+}
+
+.dish_day-pic {
+	position: relative;
+	margin-right: 73px;
+}
+
+.dish_day-profil {
+	position: absolute;
+	left: 0;
+	top: 475px;
+	padding: 2px 16px 2px 16px;
+
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 28px;
+	color: #FDB100;
+
+	background: #FFFFFF;
+	border-radius: 0 5px 5px 0;
+}
+
+.dish_day-profil:hover {
+	color: #FD8800;
+	transition: .2s all;
+}
+
+.dish_day-info {
+	position: relative;
+}
+
+.dish_day-statistics {
+	display: flex;
+}
+
+.dish_day-logo {
+	margin-top: 54px;
+}
+
+.dish_day-logo-text {
+	margin-bottom: -24px;
+}
+
+.dish_day-logo-smile {
+	width: 50px;
+	height: 50px;
+
+	margin-left: 11px;
+
+	background: #FDB100;
+	border-radius: 50%;
+	padding: 15px;
+}
+
+.dish_day-stat_info {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end; /*размещаем элементы которые лежат правее заголовка, в правый конец карточки (см. ниже)*/
+	position: absolute;
+	right: 0;
+}
+
+.dish_day-like_pic {
+	position: relative;
+	cursor: pointer;
+}
+
+.dish_day-like {
+	position: absolute;
+	padding-left: 10px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: #25292D;
+
+}
+
+.dish_day-stat-time {
+	display: flex;
+	margin-left: 78px;
+	padding-left: 20px;
+	background: url(images/icon/recipe_day-time.svg) no-repeat left;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: #25292D;
+}
+
+.dish_day-time {
+	padding-left: 10px;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: #25292D;
+}
+
+.dish_day-text_info-title {
+	width: 513px;
+	padding-top: 32px;
+	padding-bottom: 16px;
+
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 60px;
+	color: #25292D;
+}
+
+.dish_day-text_info-text {
+	width: 513px;
+
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	font-feature-settings: 'case' on;
+	color: #4A525A;
+}
+/*Section dish_day end*/
+
+/*Section form start*/
+.main-form {
+	margin-bottom: 106px;
+}
+
+.form-title {
+	padding-bottom: 16px;
+
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 51px;
+	text-align: center;
+	color: #25292D;
+}
+
+.form-text {
+	padding-bottom: 64px;
+
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	font-feature-settings: 'case' on;
+	color: #4A525A;
+}
+
+.form-name_dish {
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.input-name_dish {
+	padding: 28px 464px 28px 32px;
+
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: rgba(37, 41, 45, 0.5);
+
+	background: #FFFFFF;
+	box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+	border-radius: 16px;
+	border: 1px solid rgba(34, 39, 47, 0.04)
+}
+
+.input-name_dish:focus { /*убирает рамку*/
+	outline: none;
+	border: 1px solid #727A82
+}
+
+.button-name_dish {
+	padding: 27px 32px 27px 32px;
+	margin-left: 16px;
+
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+
+	background: #FDB100;
+	border-radius: 16px;
+	border: 1px solid #FDB100;
+	cursor: pointer;
+}
+
+.button-name_dish:hover {
+	background: #FD8800;
+	transition: .2s all;
+}
+
+.form-tegs {
+	display: flex;
+	margin-left: 21%;
+}
+
+.form-name_dish_teg {
+	margin-right: 15px;
+}
+
+.form-teg {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	color: #808080;
+}
+/*Section form end*/
+/*Main styles end*/
+
+/*Footer styles start*/
+.footer {
+	background: #FBF9F4;
+	padding: 37px 0;
+}
+
+.footer-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-logo {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+	color: #FDB100;
+}
+
+.footer-text {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #4A525A;
+}
+/*Footer styles end*/
+
+/*POPUP styles start*/
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.pop-up_container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.popup.open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.pop-up_body {
+	margin: auto;
+	background-color:#FEFEFB;
+	border-radius: 24px;
+	position: relative;
+	box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+}
+
+.pop-up_body-title {
+	margin-top: 60px;
+	margin-bottom: 45px;
+	padding-left: 62px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	color: #25292D;
+}
+
+.pop-up_body-input {
+	display: block;
+	width: 580px;
+	height: 50px;
+	margin-bottom: 20px;
+	margin-left: 60px;
+	margin-right: 60px;
+	padding: 11px 20px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: rgba(37, 41, 45, 0.5);
+	border: 1px solid rgba(145, 150, 161, 0.4);
+	box-sizing: border-box;
+	border-radius: 16px;
+}
+
+.pop-up_body-input:focus { /*убирает рамку вокруг поля*/
+	outline: none;
+	border: 1px solid #727A82 
+}
+
+.popup_register-inputs {
+	display: flex;
+	margin-left: 60px;
+}
+
+.popup_register-input {
+	width: 278px;
+	height: 50px;
+	margin-right: 24px;
+	padding: 11px 20px;
+	border: 1px solid rgba(145, 150, 161, 0.4);
+	box-sizing: border-box;
+	border-radius: 16px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: rgba(37, 41, 45, 0.5);
+}
+
+.popup_register-input:focus {
+	outline: none; 
+	border: 1px solid #727A82
+}
+
+.popup_register-text {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 28px;
+	color: rgba(37, 41, 45, 0.3);
+}
+
+.pop-up_body-text {
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-bottom: 40px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #4A525A;
+	flex-wrap: wrap;
+}
+
+.pop-up_battons {
+	margin-top: 30px;
+	margin-left: 60px;
+	margin-bottom: 50px;
+}
+
+.pop-up_batton-orange-start {
+	cursor: pointer;
+	padding: 16px 109px;
+	margin-right: 22px;
+	border-radius: 16px;
+	background: #FDB100;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;	
+	color: #FFFFFF;
+	border: 1px solid #FDB100;
+}
+
+.pop-up_batton-orange-start:hover {
+	background: #FD8800;
+	transition: .2s all;
+}
+
+.pop-up_batton-white-register {
+	cursor: pointer;
+	margin-right: 22px;
+	margin-right: 60px;
+	padding: 16px 85px;
+	border-radius: 16px;
+	background: #FEFEFB;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;	
+	color: #FDB100;
+	border: 1px solid #FDB100;
+	box-sizing: border-box;
+}
+
+.pop-up_batton-white-register:hover {
+	color: #FD8800;
+	border: 1px solid #FD8800;
+	transition: .2s all;
+}
+
+.pop-up_batton-orange {
+	cursor: pointer;
+	margin-right: 22px;
+	width: 278px;
+	height: 60px;
+	border-radius: 16px;
+	background: #FDB100;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;	
+	color: #FFFFFF;
+	border: 1px solid #FDB100;
+}
+
+.pop-up_batton-orange:hover {
+	background: #FD8800;
+	transition: .2s all;
+}
+
+.pop-up_batton-white {
+	cursor: pointer;
+	margin-right: 22px;
+	margin-right: 60px;
+	width: 278px;
+	height: 60px;
+	border-radius: 16px;
+	background: #FEFEFB;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;	
+	color: #FDB100;
+	border: 1px solid #FDB100;
+	box-sizing: border-box;
+}
+
+.pop-up_batton-white:hover {
+	color: #FD8800;
+	border: 1px solid #FD8800;
+	transition: .2s all;
+}
+
+.error_form_login {
+	color: red;
+	margin-bottom: 15px;
+}
+
+.error_form_reg {
+	color: red;
+	margin-bottom: 10px;
+	margin-top: -15px;
+}
+
+.pop-up_not-account {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.pop-up_not-account a {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+	color: #FDB100;
+	padding-bottom: 2px;
+	border-bottom: 1px dashed #FDB100;
+}
+
+.pop-up_close {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 21px;
+	color: rgba(145, 150, 161, 0.4);
+	cursor: pointer;
+}
+/*POPUP style end*/
+
+@media screen and (max-width: 960px) {
+
+	.intro {
+		 min-height: 80vh;
+	}
+
+	.header-logo {
+		padding-left: 50px;
+	}
+
+	.header-nav {
+		margin-left: 100px;
+	}
+
+	.header-item {
+		padding-right: 55px;
+	}
+
+	.header-login {
+		margin-right: 90px;
+	}
+
+	.intro-wrapper {
+		margin-left: 50px;
+	}
+
+	.main-tegs {
+		margin-left: 50px;
+	}
+
+	.block_dishs {
+		grid-template-columns: repeat(2, 1fr); 
+		row-gap: 29px; /*расстояние между колонками*/
+	}
+
+	.main-dish_day {
+		margin-left: 50px;
+	}
+
+	.dish_day-picture {
+		width: 463px;
+		height: auto;
+	}
+
+	.dish_day-pic {
+		margin-right: 43px;
+	}
+
+	.dish_day-profil {
+		top: 320px;
+	}
+
+	.dish_day-logo {
+		margin-top: 0;
+	}
+
+	.dish_day-stat_info {
+		margin-right: 50px;
+	}
+
+	.dish_day-stat-time p {
+		padding-left: 8px;
+	}
+
+	.dish_day-text_info-title {
+		width: 480px;
+		padding-top: 32px;
+		padding-bottom: 14px;
+
+		font-size: 35px;
+	}
+
+	.dish_day-text_info-text {
+		width: 450px;
+		font-size: 17px;
+	}
+
+	.footer {
+		width: 100%;
+	}
+
+	.form-tegs {
+		margin-left: 6%;
+	}
+
+	.footer-logo {
+		margin-left: 50px;
+	}
+
+	.footer-text {
+		margin-right: 50px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.intro {
+		min-height: 0;
+		background: none;
+	}
+
+	.header-logo {
+		padding-left: 40px;
+	}
+
+	.header-nav {
+		margin-left: 55px;
+	}
+
+	.header-item {
+		padding-right: 50px;
+	}
+
+	.header-login {
+		margin-right: 30px;
+	}
+
+	.intro-wrapper {
+		margin-top: 110px;
+		margin-left: 40px;
+	}
+
+	.intro-title {
+		text-align: center;
+	}
+
+	.intro-text {
+		padding-left: 55px;
+		text-align: center;
+	}
+
+	.intro-buttons {
+		justify-content: center;
+	}
+
+	.main-tegs {
+		margin-left: 40px;
+	}
+
+	.main-dish_day {
+		flex-wrap: wrap;
+		margin-left: 50px;
+		position: relative;
+	}
+
+	.dish_day-statistics {
+		display: block;
+	}
+
+	.dish_day-pic {
+		width: 343px;
+		height: 343px;
+	}
+
+	.dish_day-profil {
+		top: 295px;
+	}
+
+	.dish_day-statistics {
+		position: absolute;
+		margin-left: 75%;
+	}
+
+	.dish_day-logo {
+		margin-left: -30px;
+		margin-bottom: 10px;
+	}
+
+	.dish_day-stat_info {
+		position: relative;
+	}
+
+	.dish_day-stat-like {
+		margin-left: -75px;
+		padding-left: 5px;
+	}
+
+	.dish_day-like {
+		padding-left: 5px;
+	}
+
+	.dish_day-stat-time {
+		margin-left: 58px;
+		padding-left: 18px;
+	}
+
+	.dish_day-time {
+		padding-left: 5px;
+	}
+
+	.dish_day-text_info-title {
+		width: 650px;
+	}
+
+	.dish_day-text_info-text {
+		width: 650px;
+	}
+
+	.input-name_dish {
+		padding: 28px 350px 28px 32px;
+	}
+
+	.button-name_dish {
+		margin-left: 8px;
+		margin-right: 15px;
+	}
+
+	.footer-logo {
+		margin-left: 40px;
+	}
+
+	.footer-text {
+		margin-right: 40px;
+	}
+}
